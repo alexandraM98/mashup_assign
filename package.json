@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/alexandraM98/mashup_app#readme",
   "dependencies": {
+    "express": "^4.17.2",
     "js": "^0.1.0",
     "nodemon": "^2.0.15"
   }
