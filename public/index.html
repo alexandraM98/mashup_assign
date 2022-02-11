@@ -8,7 +8,6 @@
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <link rel="stylesheet" type="text/css" href="./style.css">
 
 	<title>Financial Dashboard</title>
@@ -31,38 +30,60 @@
     </div>
   </nav>
 </header>
+<body>
 
-<section class="col-10">
-
-    <img class="col-7 cover"></img>
-
-    <div class="col-5 description">
-      <h1>Get <span>insights</span> that help your business grow.</h1>
-      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-      experience, and overall efficiency.</p>
-    
-      <div class="stats">
-
-        <aside>
-          <h1>10k+</h1> 
-          <h2>COMPANIES</h2>
-        </aside>
-        
-        <aside>
-          <h1>314</h1> 
-          <h2>TEMPLATES</h2>
-        </aside>
-        
-        <aside>
-          <h1>12M+</h1>
-          <h2>QUERIES</h2>
-        </aside>
+  <main role="main" class="container">
+    <div class="row">
+      <div class="col-md-8">
+          <p class='text-muted'>You can put any information here you'd like.
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <div id="tradingview_5658e"></div>
+              <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/WAVESUSD/?exchange=BINANCEUS" rel="noopener" target="_blank"><span class="blue-text">WAVESUSD Chart</span></a> by TradingView</div>
+              <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+              <script type="text/javascript">
+              new TradingView.widget(
+              {
+              "autosize": true,
+              "symbol": "BINANCEUS:WAVESUSD",
+              "interval": "W",
+              "timezone": "Etc/UTC",
+              "theme": "dark",
+              "style": "2",
+              "locale": "en",
+              "toolbar_bg": "#f1f3f6",
+              "enable_publishing": false,
+              "allow_symbol_change": true,
+              "container_id": "tradingview_5658e"
+            }
+              );
+              </script>
+            </div>
+            <!-- TradingView Widget END -->
         
       </div>
+      <div class="col-md-4">
+        <div class="content-section">
+          <h1>Waves Latest Market Prices:</h1>
+          
+          <p id='total_cap'></p>
+          <p id='assets_cap'></p> 
+          <p id='gateways_cap'></p>
 
+          <h2>About Waves...</h2>
+          <p id="waves_desc"></p>
+
+      </div>
+    </div>
+  </main>
+  
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Alexandra Mitu</a>.
     </div>
 
-  </section>
+    
+  
 
 <!--We will now inherit this base template into all our pages -->
 <!-- Optional JavaScript -->
