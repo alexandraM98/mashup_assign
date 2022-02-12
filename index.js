@@ -7,9 +7,6 @@ app.use(express.static('public'));
 
 
 //Setting the port for the app at localhost:3000
-const port = 3000;
-app.listen(port, () => {
-    console.log(`Example app listening on port http://localhost:${port}`)
-  });
-
+const port = process.env.PORT || 3000;
+app.listen(port);
 
