@@ -5,8 +5,6 @@ const app = express();
 //Enabling the usage of static files from the 'public' folder
 app.use(express.static('public'));
 
-//Enabling dotenv to use environment variables
-require('dotenv').config();
 
 //Setting the port for the app at localhost:3000
 const port = 3000;
